@@ -1,0 +1,24 @@
+@import "../../mixins";
+
+.container {
+    background: #f0f0f0;
+}
+
+@include pc-only() {
+    .img {
+        width: 70%;
+        height: max-content;
+    }
+}
+
+@include tab() {
+    .img {
+        width: 70%;
+        height: max-content;
+    }
+}
+
+.video {
+    max-width: 50%;
+    height: auto;
+}

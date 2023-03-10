@@ -1,0 +1,33 @@
+@import "../../../mixins";
+
+.background {
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    position: absolute;
+    top: 150px;
+    right: 550px;
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    border: 3px solid #b6b6b6;
+    overflow: hidden;
+
+    @include mob-large() {
+        position: absolute;
+        top: 180px;
+        right: 30px;
+        width: 300px;
+        height: 400px;
+    }
+
+    &.body {
+        background-color: transparent;
+    }
+}
+
+.green {
+    border: 10px solid green;
+    background: transparent;
+}
